@@ -10,7 +10,7 @@ const config = {
     state: process.env.NODE_ENV || "unknown",
     prod: process.env.NODE_ENV === "production",
     token: process.env.DISCORDTOKEN,
-    prefix: process.env.NODE_ENV === "production" ? "a&" : "a$",
+    prefix: process.env.NODE_ENV === "production" ? "*" : "a$",
     invite: `https://discord.com/oauth2/authorize?client_id=${process.env.CLIENTID}&permissions=2146827775&response_type=code&scope=bot`,
     oauth: `https://discord.com/api/oauth2/authorize?client_id=${process.env.CLIENTID}&redirect_uri=${encodeURIComponent(process.env.REDIRECT)}&response_type=code&scope=guilds%20identify`,
     support: "https://discord.com/invite/8KV5zCg",
@@ -18,7 +18,7 @@ const config = {
     website: "https://auroradiscordbot.ga",
     port: 3000,
 
-    owners: ["521007613475946496"],
+    owners: ["376384142599782410"],
     developers: ["480933736276426763"],
     admins: [],
     helpers: [],
